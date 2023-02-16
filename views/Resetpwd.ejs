@@ -1,0 +1,23 @@
+<%- include('./Partials/header')%>
+    <!--  -->
+    <%- include('./Partials/nav')%>
+        <!--  -->
+
+        <div class="ProfilePage reset-page">
+            <div class="container">
+                <h1>Reset Password</h1>
+            </div>
+            <!--  -->
+            <div class="container mt-4">
+                <form action="/reset-password" method="post" class="w-50 form-control">
+                    <input class="form-control mb-4" type="password" placeholder="OldPassword*" name="oldPassword">
+                    <input class="form-control mb-4" type="password" placeholder="NewPassword*" name="newPassword">
+                    <button class="btn btn-primary">Reset password</button>
+                </form>
+                <!--  -->
+                <a class="text-danger mt-3" href="/editprofile">&#706;&nbsp;&nbsp;Back to the edit page.</a>
+            </div>
+        </div>
+
+        <!--  -->
+        <%- include('./Partials/footer')%>

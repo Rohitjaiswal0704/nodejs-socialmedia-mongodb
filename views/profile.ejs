@@ -1,0 +1,75 @@
+<%- include('./Partials/header')%>
+    <!--  -->
+    <%- include('./Partials/nav')%>
+        <!--  -->
+
+        <div class="ProfilePage">
+            <div class="profile_top">
+                <div class="profile_top_left">
+                    <div class="profile_img"
+                        style="background-image: url('/assets/<%= user.avatar%>'); background-position: center; background-repeat: no-repeat; background-size: cover;">
+                    </div>
+                </div>
+                <div class="profile_top_right">
+                    <h1>
+                        <%= user.firstname%>
+                            <%= user.lastname%>
+                    </h1>
+                    <h5>
+                        <%= user.username%>
+                    </h5>
+                    <p>
+                        <%= user.about%>
+                    </p>
+                    <a class="btn btn-outline-danger" href="/editprofile">Edit profile</a>
+                </div>
+            </div>
+            <hr>
+            <!--  -->
+            <div class="profile_bottom">
+                <div class="profile_btm_wrapper">
+                    <% posts.forEach((post)=>{%>
+                        <div class="userpostCard">
+                            <!-- top -->
+                            <div class="card_head">
+                                <img src="/assets/<%= user.avatar%>" alt="">
+                                <h5>| <%= user.username%>
+                                </h5>
+                            </div>
+                            <!-- contentBox -->
+                            <div class="contentBox">
+                                <h3>
+                                    <%= post.title%>
+                                </h3>
+                                <p>
+                                    <%= post.content%>
+                                </p>
+                            </div>
+                            <!-- middle -->
+                            <div class="ViewBox">
+                                <% if(post.multimedia.includes(".mp4")) { %>
+                                    <video controls height="200" src="/assets/<%= post.multimedia %>"></video>
+                                    <% } else if(post.multimedia.includes(".png") | post.multimedia.includes(".jpg")){
+                                        %>
+                                        <img height="200" src="/assets/<%= post.multimedia %>" alt="" />
+                                        <% } else if(post.multimedia.includes(".mp3")){ %>
+                                            <audio controls src="/assets/<%= post.multimedia %>"></audio>
+                                            <% }%>
+                            </div>
+                            <!-- bottom -->
+                            <div class="reviewBox">
+                                <a class="likebtn btn btn-primary" href="/like/<%= post._id%>">
+                                    <%= post.likes.length %> Like
+                                </a>
+                                <a class="dislikebtn btn btn-danger" href="/dislike/<%= post._id%>">
+                                    <%= post.dislikes.length %> Dislike
+                                </a>
+                            </div>
+
+                        </div>
+                        <%})%>
+                </div>
+            </div>
+        </div>
+        <!--  -->
+        <%- include('./Partials/footer')%>

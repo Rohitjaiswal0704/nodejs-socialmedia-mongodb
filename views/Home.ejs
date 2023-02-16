@@ -1,0 +1,51 @@
+<%- include('./Partials/header')%>
+    <!--  -->
+    <%- include('./Partials/nav')%>
+        <!--  -->
+
+        <div class="Homepage">
+            <div class="postCardwrapper">
+                <% posts.forEach(function(post){%>
+                    <div class="postCard">
+                        <!-- top -->
+                        <div class="card_head">
+                            <img src="/assets/<%= post.postedBy.avatar%>" alt="">
+                            <h5>| <%= post.postedBy.username%>
+                            </h5>
+                        </div>
+                        <!-- contentBox -->
+                        <div class="contentBox">
+                            <h3>
+                                <%= post.title%>
+                            </h3>
+                            <p>
+                                <%= post.content%>
+                            </p>
+                        </div>
+                        <!-- middle -->
+                        <div class="ViewBox">
+                            <% if(post.multimedia.includes(".mp4")) { %>
+                                <video controls height="200" src="/assets/<%= post.multimedia %>"></video>
+                                <% } else if(post.multimedia.includes(".png") | post.multimedia.includes(".jpg")){ %>
+                                    <img height="200" src="/assets/<%= post.multimedia %>" alt="" />
+                                    <% } else if(post.multimedia.includes(".mp3")){ %>
+                                        <audio controls src="/assets/<%= post.multimedia %>"></audio>
+                                        <% }%>
+                        </div>
+                        <!-- bottom -->
+                        <div class="reviewBox">
+                            <a class="likebtn btn btn-primary" href="/like/<%= post._id%>">
+                                <%= post.likes.length %> Like
+                            </a>
+                            <a class="dislikebtn btn btn-danger" href="/dislike/<%= post._id%>">
+                                <%= post.dislikes.length %> Dislike
+                            </a>
+                        </div>
+                    </div>
+                    <%})%>
+            </div>
+        </div>
+
+
+        <!--  -->
+        <%- include('./Partials/footer')%>

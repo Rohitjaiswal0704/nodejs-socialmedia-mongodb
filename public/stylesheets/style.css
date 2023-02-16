@@ -1,0 +1,234 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  /* overflow: hidden !important; */
+  overflow-x: hidden;
+}
+
+
+#main {
+  min-height: 100vh;
+  width: 100vw;
+}
+
+.siginPage {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+}
+
+.siginleft {
+  min-height: inherit;
+  /* width: 50vw; */
+  /* background-image: url(/images/bgcimg.jpg); */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.SignInForm {
+  min-height: inherit;
+  width: 50vw;
+  display: flex;
+  padding: 5vw;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbar {
+  background-color: #1060d8 !important;
+}
+
+/* ProfilePage */
+.ProfilePage {
+  min-height: 100vh;
+  width: 100vw;
+  padding: 2vw;
+}
+
+/* profile_top */
+.profile_top {
+  height: 40vh;
+  width: 100vw;
+  display: flex;
+}
+
+.profile_top_left {
+  height: inherit;
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile_img {
+  height: 13vmax;
+  width: 13vmax;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profile_top_right {
+  height: inherit;
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.reset-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.addpost i {
+  font-size: 3vmax;
+  color: white;
+  margin-right: 1vmax;
+}
+
+.addpost i:hover {
+  color: black;
+}
+
+/* Homepage */
+
+.Homepage {
+  min-height: 100vh;
+  width: 100vw;
+  padding: 2vw;
+  display: flex;
+  justify-content: center;
+}
+
+.postCard {
+  height: 28vmax;
+  width: 43vmax;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 2vmax;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.455);
+}
+
+.card_head {
+  display: flex;
+  align-items: center;
+  height: fit-content;
+  background-color: black;
+  padding: 0.5vmax;
+}
+
+.card_head img {
+  height: 3vmax;
+  width: 3vmax;
+  border-radius: 50%;
+  margin-right: 0.5vmax;
+}
+
+.card_head h5 {
+  margin-top: 0.4vmax;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: capitalize;
+}
+
+
+.postCardwrapper {
+  height: inherit;
+  width: 60vw;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.contentBox {
+  height: fit-content;
+  padding: 0.5vmax;
+}
+
+.contentBox h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: capitalize;
+}
+
+.ViewBox {
+  height: fit-content;
+}
+
+.ViewBox video {
+  height: 190px;
+  width: 100%;
+}
+
+.ViewBox audio {
+  height: 200px;
+  width: 100%;
+}
+
+.ViewBox img {
+  height: 200px;
+  width: 100%;
+}
+
+.reviewBox {
+  height: fit-content;
+  margin-top: 1vmax;
+  padding: 0 1vmax;
+}
+
+.likebtn {
+  padding: 0.6vmax 1.6vmax;
+  margin-right: 1vmax;
+}
+
+.dislikebtn {
+  padding: 0.6vmax 1.3vmax;
+}
+
+/* userpostCard */
+
+.userpostCard {
+  height: 28vmax;
+  width: 43vmax;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 2vmax;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.455);
+}
+
+.profile_btm_wrapper {
+  height: inherit;
+  width: 96vw;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
+/* ------------------------------------------------------------------------------------- */

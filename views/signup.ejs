@@ -1,0 +1,41 @@
+<%- include('./Partials/header')%>
+    <!--  -->
+
+    <div class="siginPage">
+        <div class="siginleft"></div>
+        <!--  -->
+        <div class="SignInForm">
+            <form action="/signup" method="post" class="form-control mb-5">
+                <div class="row">
+                    <div class="col">
+                        <input type="text" name="firstname" class="form-control" placeholder="First name"
+                            aria-label="First name">
+                    </div>
+                    <div class="col">
+                        <input type="text" name="lastname" class="form-control" placeholder="Last name"
+                            aria-label="Last name">
+                    </div>
+                </div>
+                <div class="mb-4 mt-4">
+                    <input type="text" name="username" placeholder="username" class="form-control">
+                </div>
+                <div class="mb-4 mt-4">
+                    <input type="email" name="email" placeholder="Email address" class="form-control"
+                        id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-4">
+                    <input type="password" name="password" placeholder="Password" class="form-control"
+                        id="exampleInputPassword1">
+                </div>
+                <div class="col mb-4">
+                    <h6>Date of birth:</h6>
+                    <input type="date" name="dob" class="form-control">
+                </div>
+                <button type="submit" class="btn btn-primary">Sign up</button>
+            </form>
+            <p>I have already an account? <a href="/">Signin</a></p>
+        </div>
+    </div>
+
+    <!--  -->
+    <%- include('./Partials/footer')%>

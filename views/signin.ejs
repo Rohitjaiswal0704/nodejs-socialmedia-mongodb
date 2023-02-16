@@ -1,0 +1,25 @@
+<%- include('./Partials/header')%>
+    <!--  -->
+    <div class="siginPage">
+        <div class="siginleft">
+
+        </div>
+        <!--  -->
+        <div class="SignInForm">
+            <form action="signin" method="post" class="form-control w-100 mb-4">
+                <div class="mb-4">
+                    <input type="email" name="email" placeholder="Email address" class="form-control"
+                        id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-4">
+                    <input type="password" name="password" placeholder="Password" class="form-control"
+                        id="exampleInputPassword1">
+                </div>
+                <button type="submit" class="btn btn-primary">Log in</button>
+            </form>
+            <a class="text-danger" href="/forget-password">Forgotten password?</a><br>
+            <p>Don't have an account? <a class="text-primary" href="/signup">Signup</a></p>
+        </div>
+    </div>
+    <!--  -->
+    <%- include('./Partials/footer')%>

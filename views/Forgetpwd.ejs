@@ -1,0 +1,19 @@
+<%- include('./Partials/header')%>
+    <!--  -->
+
+    <div class="ProfilePage reset-page">
+        <div class="container">
+            <h1>Froget Password</h1>
+        </div>
+        <!--  -->
+        <div class="container mt-4">
+            <form action="/forget-password" method="post" class="w-50 form-control">
+                <input class="form-control mb-4" type="email" placeholder="example@email.com" name="email">
+                <button class="btn btn-primary">Enter Registered Email</button>
+            </form>
+            <!--  -->
+            <a class="text-danger mt-3" href="/">&#706;&nbsp;&nbsp;Back to the signin page.</a>
+        </div>
+    </div>
+    <!--  -->
+    <%- include('./Partials/footer')%>

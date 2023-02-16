@@ -1,0 +1,19 @@
+<%- include('./Partials/header')%>
+    <!--  -->
+    <%- include('./Partials/nav')%>
+        <!--  -->
+
+        <div class="ProfilePage">
+            <form action="/create-post" method="post" enctype="multipart/form-data">
+                <input type="text" placeholder="Title" name="title" /> <br />
+                <br />
+                <textarea name="content" placeholder="enter text here..."></textarea> <br />
+                <br />
+                <input type="file" name="multimedia" /> <br />
+                <br />
+
+                <button>Create Post</button>
+            </form>
+        </div>
+        <!--  -->
+        <%- include('./Partials/footer')%>
