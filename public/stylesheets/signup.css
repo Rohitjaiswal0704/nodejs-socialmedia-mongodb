@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html,body{
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+  }
+  .main_r{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(80deg,#1EC1E3, #7577EC ,#F903FE);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .dd99{
+    display: flex;
+    justify-content: space-between;
+  }
+  .main_box_right{
+    width: 37vw;
+    height: 95vh;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 1vw;
+  }
+  
+  .h11{
+   font-family: gilroy;
+   font-size: 2.5vw;
+   font-weight: 700;
+   margin-top: 4vw;
+  }
+  
+  .f_r{
+    margin-top: 4vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .r1{
+    width: 26vw;
+    border: none;
+    outline: none;
+    margin-top: 2vw;
+    font-family: gilroy;
+    font-size: 1.6vw;
+    font-weight: 400;
+    border-bottom: 0.2vw solid grey;
+  }
+  .r100{
+    width: 12vw;
+    border: none;
+    outline: none;
+    margin-top: 1vw;
+    font-family: gilroy;
+    font-size: 1.6vw;
+    font-weight: 400;
+    border-bottom: 0.2vw solid grey;
+  }
+  .r666{
+    margin-left: 1vw;
+    width: 13vw;
+  }
+  .btn1{
+    width: 28vw;
+    height: 7vh;
+    margin-top: 4vw;
+    border-radius: 4vw;
+    border: none;
+    font-size: 1.6vw;
+    font-family: gilroy;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    background: linear-gradient(80deg,#1EC1E3, #7577EC ,#F903FE);
+  }
+  .btn2{
+    width: 28vw;
+    height: 7vh;
+    border-radius: 4vw;
+    margin-top: 3vw;
+    font-size: 1.6vw;
+    border: none;
+    font-family: gilroy;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    background: linear-gradient(80deg,#1EC1E3, #7577EC ,#F903FE);
+  }
+  
+  .colore1{
+    width: 30vw;
+    height: 50vh;
+    background-color: #4c98e3;
+    position: absolute;
+    transform: rotate(150deg);
+    top: 0;
+    left: -18%;
+    border-radius: 1.5vw;
+  }
+  
+  .colore2{
+    width: 40vw;
+    height: 60vh;
+    background-color: #ab25c2;
+    position: absolute;
+    transform: rotate(240deg);
+    top: 25%;
+    right: -23%;
+    border-radius: 2vw;
+  }
